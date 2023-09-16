@@ -20,11 +20,21 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#ffffff",
+        "package": "com.arnab.findplace",
+        "googleMapsApiKey": "AIzaSyBICrEsiQM_mnY-7jM0BihoZed_mTlqg64"
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Explore-place to use your location."
+        }
+      ]
+    ]
   }
 }
